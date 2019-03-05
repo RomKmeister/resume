@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Myriad Pro";
+  src: local("MyriadPro"), local("MyriadPro"), url(fonts/MyriadPro-Regular.woff) format("woff"), url(fonts/MyriadPro-Regular.ttf) format("truetype"), url(fonts/MyriadPro-Regular.svg#webfont) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: local("MyriadPro"), local("MyriadPro"), url(fonts/MyriadPro-Bold.woff) format("woff"), url(fonts/MyriadPro-Bold.ttf) format("truetype"), url(fonts/MyriadPro-Bold.svg#webfont) format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: local("MyriadPro"), local("MyriadPro"), url(fonts/MyriadPro-LightSemiExtended.woff) format("woff"), url(fonts/MyriadPro-LightSemiExtended.ttf) format("truetype"), url(fonts/MyriadPro-LightSemiExtended.svg#webfont) format("svg");
+  font-weight: 100;
+  font-style: normal; }
+
+body {
+  font-family: "Myriad Pro", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000; }
+
+h1 {
+  font-size: 96px; }
+
+.profile__title {
+  font-size: 63px;
+  line-height: 75px;
+  color: #3d6cb0;
+  text-transform: uppercase; }
+
+.bold {
+  font-weight: bold; }
+
+.contacts__title {
+  font-size: 63px;
+  line-height: 75px;
+  color: #3d6cb0;
+  text-transform: uppercase; }
+
+.skills__title {
+  font-size: 63px;
+  line-height: 75px;
+  color: #3d6cb0;
+  text-transform: uppercase; }
+
+.skills-list {
+  list-style: none;
+  text-transform: uppercase; }
+
+/*
+.skill__item {
+    width: 500px;
+    background-image: radial-gradient(#3D6CB4 0%, #3d6cb0 27px, transparent 55%);
+    background-position: bottom;
+    background-size: 72px 70px;
+    background-repeat: repeat-x;
+    */
+
+.education__title {
+  font-size: 63px;
+  line-height: 75px;
+  color: #3d6cb0;
+  text-transform: uppercase; }
+
+.experience__title {
+  font-size: 63px;
+  line-height: 75px;
+  color: #3d6cb0;
+  text-transform: uppercase; }
+
+.software__title {
+  font-size: 63px;
+  line-height: 75px;
+  color: #3d6cb0;
+  text-transform: uppercase; }
+
