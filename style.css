@@ -45,6 +45,9 @@
   margin: -10px 0 0 14px;
   background: #3d6cb0; }
 
+.main {
+  width: 639px; }
+
 body {
   font-family: "Myriad Pro", "Arial", sans-serif;
   font-size: 24px;
@@ -123,14 +126,17 @@ body {
   margin: -10px 0 0 14px;
   background: #3d6cb0; }
 
-.bold {
-  font-weight: bold; }
+.profile {
+  margin-top: 48px; }
 
 .profile__text {
   margin: 0;
   width: 644px;
   margin-top: 34px; }
 
+.profile__tex--bold {
+  font-weight: bold; }
+
 .title {
   position: relative;
   display: flex;
@@ -159,12 +165,24 @@ body {
   height: 8px;
   margin: -10px 0 0 14px;
   background: #3d6cb0; }
+
+.contacts {
+  margin-top: 90px; }
 
 .contacts__table {
-  font-size: 41px;
-  line-height: 50px; }
+  margin-top: 63px;
+  font-size: 32px;
+  line-height: 1.2;
+  border-collapse: collapse; }
+
+td {
+  padding: 0;
+  vertical-align: top; }
 
 td:first-child {
+  padding-right: 61px;
+  padding-bottom: 47px;
+  font-weight: bold;
   color: #3d6cb0;
   text-transform: uppercase; }
 
@@ -197,13 +215,32 @@ td:first-child {
   margin: -10px 0 0 14px;
   background: #3d6cb0; }
 
-.skill__item {
-  font-size: 51px;
-  line-height: 63px; }
+.skills {
+  margin-top: 47px; }
 
 .skills__list {
+  margin-top: 46px;
   list-style: none;
   text-transform: uppercase; }
+
+.skill__item {
+  position: relative;
+  padding-bottom: 56px;
+  font-size: 41px;
+  line-height: 63px;
+  text-align: center; }
+
+.skill__item::after {
+  content: "";
+  position: absolute;
+  left: 16px;
+  bottom: 20px;
+  background: radial-gradient(circle at center, #f4f6f9 40%, transparent 41%);
+  background-size: 43px;
+  background-repeat: repeat-x;
+  background-position: 5px center;
+  width: 86%;
+  height: 50px; }
 
 .title {
   position: relative;
