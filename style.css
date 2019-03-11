@@ -46,7 +46,7 @@
   background: #3d6cb0; }
 
 .main {
-  width: 639px; }
+  width: 964px; }
 
 body {
   font-family: "Myriad Pro", "Arial", sans-serif;
@@ -270,6 +270,49 @@ td:first-child {
   height: 8px;
   margin: -10px 0 0 14px;
   background: #3d6cb0; }
+
+.education__descriptions {
+  margin: 0;
+  padding: 0;
+  padding-top: 63px;
+  list-style: none; }
+
+.description {
+  position: relative;
+  padding-left: 68px;
+  margin-bottom: 22px; }
+
+.description::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  width: 31px;
+  height: 31px;
+  background: #000000;
+  border-radius: 50%; }
+
+.description__header {
+  margin: 0;
+  font-size: 41px;
+  line-height: 1;
+  color: #3d6cb0;
+  text-transform: uppercase; }
+
+.description__dates {
+  font-weight: normal;
+  text-transform: none;
+  color: #000000; }
+
+.description__specify {
+  display: block;
+  margin-top: 11px;
+  font-weight: normal;
+  color: #000000; }
+
+.description__text {
+  margin: 0;
+  margin-top: 10px; }
 
 .title {
   position: relative;
