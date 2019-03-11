@@ -271,7 +271,7 @@ td:first-child {
   margin: -10px 0 0 14px;
   background: #3d6cb0; }
 
-.education__descriptions {
+.descriptions {
   margin: 0;
   padding: 0;
   padding-top: 63px;
@@ -296,8 +296,10 @@ td:first-child {
   margin: 0;
   font-size: 41px;
   line-height: 1;
-  color: #3d6cb0;
   text-transform: uppercase; }
+
+.description__header--degree {
+  color: #3d6cb0; }
 
 .description__dates {
   font-weight: normal;
@@ -342,6 +344,12 @@ td:first-child {
   height: 8px;
   margin: -10px 0 0 14px;
   background: #3d6cb0; }
+
+.experience {
+  margin-top: 105px; }
+
+.experience__descriptions {
+  margin-top: 21px; }
 
 .title {
   position: relative;
