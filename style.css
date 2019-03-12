@@ -45,19 +45,28 @@
   margin: -10px 0 0 14px;
   background: #3d6cb0; }
 
-.main {
-  width: 964px; }
-
 body {
+  width: 1920px;
   font-family: "Myriad Pro", "Arial", sans-serif;
   font-size: 24px;
   line-height: 29px;
   color: #000000; }
 
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding: 6.7% 4.5% 0; }
+
+.first-column {
+  width: 38.7%; }
+
+.secont-column {
+  width: 55.7%; }
+
 .main__title {
   position: relative;
   margin: 0;
-  padding-top: 380px;
+  padding-top: 406px;
   font-size: 96px;
   line-height: 1;
   text-transform: uppercase;
@@ -65,21 +74,39 @@ body {
 
 .main__title--firstname {
   display: block;
-  font-weight: 100;
   font-size: 85px;
-  line-height: 1; }
+  line-height: 1;
+  font-weight: 100; }
 
 .main__title::before {
+  /*content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 49%;
+    height: 49%;
+    margin-left: -24.5%;
+
+    border-radius: 50%;
+    box-shadow: 0 0 0 21px #ffffff,
+    0 0 0 22px $main-color;
+    background: $main-color;*/
+  /* box-shadow: 0 0 0 21px #ffffff, 0 0 0 22px #3d6cb0; */
+  /* background: #3d6cb0; */
   content: "";
   position: absolute;
-  top: 0;
+  top: 22px;
   left: 50%;
-  width: 314px;
-  height: 314px;
-  margin-left: -152px;
+  margin-left: -24%;
   border-radius: 50%;
-  box-shadow: 0 0 0 21px #ffffff, 0 0 0 22px #3d6cb0;
-  background: #3d6cb0; }
+  box-shadow: 0 0 0 21px #ffffff, 0 0 0 23px #3d6cb0;
+  background: #3d6cb0;
+  padding: 23.3%;
+  /*background:
+    radial-gradient(circle at center, #3d6cb0 37.2%, transparent 37.5%), 
+    radial-gradient(circle at center, #ffffff 42%, transparent 42.3%),
+    radial-gradient(circle at center, #3d6cb0 42.4%, transparent 42.5%);*/ }
 
 .main__position {
   margin: 0;
@@ -127,11 +154,11 @@ body {
   background: #3d6cb0; }
 
 .profile {
+  width: 94.8%;
   margin-top: 48px; }
 
 .profile__text {
   margin: 0;
-  width: 644px;
   margin-top: 34px; }
 
 .profile__tex--bold {
@@ -167,6 +194,7 @@ body {
   background: #3d6cb0; }
 
 .contacts {
+  width: 94.8%;
   margin-top: 90px; }
 
 .contacts__table {
@@ -216,6 +244,7 @@ td:first-child {
   background: #3d6cb0; }
 
 .skills {
+  width: 94.8%;
   margin-top: 47px; }
 
 .skills__list {
