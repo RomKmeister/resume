@@ -91,8 +91,8 @@ body {
   left: 50%;
   margin-left: -24%;
   border-radius: 50%;
-  box-shadow: 0 0 0 21px #ffffff, 0 0 0 23px #3d6cb0;
-  background: #3d6cb0;
+  box-shadow: 0 0 0 21px #ffffff, 0 0 0 23px #0270ba;
+  background: #0270ba;
   padding: 23.3%;
   /*background:
     radial-gradient(circle at center, #3d6cb0 37.2%, transparent 37.5%), 
@@ -202,7 +202,7 @@ td:first-child {
   padding-right: 61px;
   padding-bottom: 47px;
   font-weight: bold;
-  color: #3d6cb0;
+  color: #0270ba;
   text-transform: uppercase; }
 
 .title {
@@ -244,23 +244,35 @@ td:first-child {
 
 .skill__item {
   position: relative;
+  min-width: 450px;
+  margin: 0 auto;
   padding-bottom: 56px;
   font-size: 41px;
   line-height: 63px;
   text-align: center;
   text-transform: uppercase; }
 
+.skill__item::before {
+  content: "";
+  position: absolute;
+  left: 19px;
+  bottom: 15px;
+  background: radial-gradient(circle at center, #e7e7e7 38%, transparent 39%);
+  background-size: 8.3%;
+  background-repeat: repeat-x;
+  width: 87%;
+  height: 50%; }
+
 .skill__item::after {
   content: "";
   position: absolute;
-  left: 16px;
-  bottom: 20px;
-  background: radial-gradient(circle at center, #f4f6f9 40%, transparent 41%);
-  background-size: 43px;
+  left: 19px;
+  bottom: 15px;
+  background: radial-gradient(circle at center, #0270ba 38%, transparent 39%);
+  background-size: 11.2%;
   background-repeat: repeat-x;
-  background-position: 5px center;
-  width: 86%;
-  height: 50px; }
+  width: 64%;
+  height: 50%; }
 
 .title {
   position: relative;
@@ -427,7 +439,7 @@ td:first-child {
   position: absolute;
   left: 0px;
   bottom: 28px;
-  background: #f4f6f9;
+  background: #e7e7e7;
   width: 100%;
   height: 35px; }
 
