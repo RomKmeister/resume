@@ -381,9 +381,39 @@ td:first-child {
 
 @media (max-width: 1024px) {
   .main {
-    display: block; }
+    display: block;
+    padding: 6.7% 5% 0; }
+  .main__title {
+    padding-top: 70%; }
+  .profile,
+  .contacts,
+  .skills {
+    width: 100%; }
   .first-column {
     width: 100%; }
   .second-column {
-    width: 100%; } }
+    width: 100%; }
+  .title--first-column,
+  .title--second-column {
+    padding: 2.5% 1% 3.76% 14.7%; }
+  .title--first-column::before,
+  .title--second-column::before {
+    width: 11.8%;
+    min-width: 74px; }
+  .skill__item::before,
+  .skill__item::after {
+    left: 5%; } }
+
+@media (max-width: 700px) {
+  .title--first-column,
+  .title--second-column {
+    padding-left: 91px; }
+  .container {
+    display: block; }
+  .software__list {
+    width: auto; }
+  .software__item {
+    text-align: center; }
+  .software__list--margin {
+    margin-right: 0; } }
 
