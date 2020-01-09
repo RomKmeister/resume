@@ -1,22 +1,6 @@
-import './base.scss'
-import './block-title/block-title.scss'
-import './head/head.scss'
-import './profile/profile.scss'
-import './contacts/contacts.scss'
-import './skills/skills.scss'
-import './history/history.scss'
-import './education/education.scss'
-import './experience/experience.scss'
-import './software/software.scss'
+function importAll (r) {
+  r.keys().forEach(r);
+}
 
-
-
-import './fonts/MyriadPro-Regular.woff'
-import './fonts/MyriadPro-Regular.ttf'
-import './fonts/MyriadPro-Regular.svg'
-import './fonts/MyriadPro-Bold.woff'
-import './fonts/MyriadPro-Bold.ttf'
-import './fonts/MyriadPro-Bold.svg'
-import './fonts/MyriadPro-LightSemiExtended.woff'
-import './fonts/MyriadPro-LightSemiExtended.ttf'
-import './fonts/MyriadPro-LightSemiExtended.svg'
+importAll(require.context('../src/fonts', true, /\.*$/));
+importAll(require.context('../src/', true, /\.scss$/));
