@@ -11,6 +11,7 @@
   color: $main-color;
   align-items: center;
   text-transform: uppercase;
+  background-size: 4.85rem;
 
   &::after {
     content: "";
@@ -54,7 +55,7 @@
 }
 
 @media(max-width: 1440px) {
-   .title {
+  .title {
     font-size: 1.96rem;
     line-height: 2.33;
   }

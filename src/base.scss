@@ -37,10 +37,6 @@ html {
   color: #000000;
 }
 
-body {
- width: 1920px;
-}
-
 .main {
   display: flex;
   justify-content: space-between;
@@ -87,7 +83,7 @@ body {
 
 @media(max-width: 1440px) {
   body {
-    font-size: 18px;
+    font-size: 0.75rem;
   }
 
   .second-column {
