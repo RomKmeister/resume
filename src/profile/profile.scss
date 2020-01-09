@@ -1,21 +1,17 @@
 @import '../vars';
 
 .profile {
-    width: 94.6%;
-    margin-top: 1.13rem;
-
-    &__text {
-        margin: 0.54rem 0 0;
-        
-        &--bold {
-            font-weight: bold;
-        }
-    }   
+  &__text {
+    margin: 0.54rem 0 0;
+    
+    &_bold {
+      font-weight: bold;
+    }
+  }  
 }
 
 @media(max-width: 1024px) {
-    .profile {
-        width: 100%;
-        font-size: 0.8rem;
-    }
+  .profile {
+    font-size: 0.8rem;
+  }
 }

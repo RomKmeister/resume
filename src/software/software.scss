@@ -1,75 +1,72 @@
 @import '../vars';
 
 .software {
-    margin-top: 3.55rem;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1.25rem 0 0 0.5rem;
+    padding: 0;
 
-    &__list {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 1.25rem 0 0 0.5rem;
-        padding: 0;
+    list-style: none;
+  }
 
-        list-style: none;
+  &__item {
+    width: 44%;
+
+    font-size: 1.708rem;
+    text-transform: uppercase;
+
+    &:nth-of-type(2n+1) {
+      margin-right: 11%;
     }
 
-    &__item {
-        width: 44%;
-
-        font-size: 1.708rem;
-        text-transform: uppercase;
-
-        &:nth-of-type(2n+1) {
-            margin-right: 11%;
-        }
-
-        &::after {
-            content: "";
-            display: block;
-            width: 100%;
-            padding: 4% 0;
-            background: $second-color;
-            transform: translateY(-100%);
-        }
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      padding: 4% 0;
+      background: $second-color;
+      transform: translateY(-100%);
     }
+  }
 
-    &__scale-value {
-        position: relative;
-        margin-top: 0.67rem;
-        background: $main-color;
-        padding: 4% 0;
-        z-index: 10;
-    }
+  &__scale-value {
+    position: relative;
+    margin-top: 0.67rem;
+    background: $main-color;
+    padding: 4% 0;
+    z-index: 10;
+  }
 }
 
-
 @media(max-width: 1440px) {
-    .software__item {
-        font-size: 30px;
-        line-height: 36px;
-    }
+  .software__item {
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
 }
 
 @media(max-width: 1280px) {
-    .software__item {
-        font-size: 27px;
-        line-height: 32px;
-    }
+  .software__item {
+    font-size: 1.125rem;
+    line-height: 1.33;
+  }
 }
 
 @media(max-width: 600px) {
-    .software {
-        &__list {
-            display: block;
-        }
-
-        &__item {
-            width: 100%;
-            font-size: 1.5rem;
-            text-align: center;
-        
-            &::after {
-                margin-right: 0;
-            }
-        }
+  .software {
+    &__list {
+      display: block;
     }
+
+    &__item {
+      width: 100%;
+      font-size: 1.5rem;
+      text-align: center;
+    
+      &::after {
+        margin-right: 0;
+      }
+    }
+  }
 }

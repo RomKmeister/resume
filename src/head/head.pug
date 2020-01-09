@@ -1,8 +1,8 @@
-mixin head()
+mixin head(data)
   section.head
-    img(class ='head__photo' src='images/photo.svg' alt='main-photo')
+    img(class ='head__photo' src="head/photo.svg" alt='main-photo')
     h1.head__title
-      span.head__title_firstname Name here
-      |Surname 
-    p.head__position Graphic designer
-    p.head__add-name Name here
+      span.head__firstname= data.firstName
+      span.head__surname= data.surname 
+    p.head__position= data.position
+    p.head__add-name= data.addName

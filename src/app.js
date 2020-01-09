@@ -8,7 +8,6 @@ import './history/history.scss'
 import './education/education.scss'
 import './experience/experience.scss'
 import './software/software.scss'
-import './media.scss'
 
 
 

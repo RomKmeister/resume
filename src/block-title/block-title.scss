@@ -1,91 +1,61 @@
 @import '../vars';
 
 .title {
-    display: flex;
-    min-height: 4.92rem;
-    margin: 0;
-    padding-left: 5.4rem;
+  display: flex;
+  min-height: 4.92rem;
+  margin: 0;
+  padding-left: 5.4rem;
 
-    font-size: 2.7rem;
-    line-height: 1;
-    color: $main-color;
-    align-items: center;
-    text-transform: uppercase;
+  font-size: 2.7rem;
+  line-height: 1;
+  color: $main-color;
+  align-items: center;
+  text-transform: uppercase;
 
-    &::after {
-        content: "";
-        flex-grow: 1;
-        flex-shrink: 0;
-        margin-top: -8px;
-        margin-left: 10px;
-        height: 8px;
+  &::after {
+    content: "";
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-left: 10px;
+    height: 8px;
+    transform: translateY(-100%);
+    background:$main-color;
+  }
 
-        background:$main-color;
+  &_profile {
+    background: url("../profile/profile-icon.png") 0 0 no-repeat;
+    background-size: 4.85rem;
+  }
 
-    }
+  &_contact {
+    background: url("../contacts/phone-icon.png") 0 0 no-repeat;
+    background-size: 4.85rem;
+  }
 
-    &--second-column {
-        padding: 2% 1% 3.76% 14.7%;
+  &_skills {
+    background: url("../skills/skills-icon.png") 0 0 no-repeat;
+    background-size: 4.85rem;
+  }
 
-        &::before {
-            width: 11.8%;
-        }
-    }
+  &_experience {
+    background: url("../experience/experience-icon.png") 0 0 no-repeat;
+    background-size: 4.85rem;
+  }
 
-    &_profile {
-        background: url("../profile/profile-icon.png") 0 0 no-repeat;
-        background-size: 4.85rem;
-    }
+  &_education {
+    background: url("../education/education-icon.png") 0 0 no-repeat;
+    background-size: 4.85rem;
+  }
 
-    &_contact {
-        background: url("../contacts/phone-icon.png") 0 0 no-repeat;
-        background-size: 4.85rem;
-    }
-
-    &_skills {
-        background: url("../skills/skills-icon.png") 0 0 no-repeat;
-        background-size: 4.85rem;
-    }
-
-    &_experience {
-        background: url("../experience/experience-icon.png") 0 0 no-repeat;
-        background-size: 4.85rem;
-    }
-
-    &_education {
-        background: url("../education/education-icon.png") 0 0 no-repeat;
-        background-size: 4.85rem;
-    }
-
-    &_software {
-        background: url("../software/software-icon.png") 0 0 no-repeat;
-        background-size: 4.85rem;
-    }
+  &_software {
+    background: url("../software/software-icon.png") 0 0 no-repeat;
+    background-size: 4.85rem;
+  }
 }
 
 @media(max-width: 1440px) {
-      .title {
-        font-size: 47px;
-        line-height: 56px;
-    }
-}
-
-@media(max-width: 1024px) {
-    .title--first-column,
-    .title--second-column {
-        padding: 2.5% 1% 3.76% 14.7%;
-    }
-
-    .title--first-column::before,
-    .title--second-column::before {
-        width: 11.8%;
-        min-width: 74px;
-    }
-}
-
-@media(max-width: 700px) {
-    .title--first-column,
-    .title--second-column {
-        padding-left: 91px;
-    }
+   .title {
+    font-size: 1.96rem;
+    line-height: 2.33;
+  }
 }
