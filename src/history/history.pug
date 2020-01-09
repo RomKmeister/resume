@@ -1,0 +1,13 @@
+mixin history(data)
+    ul.history
+      each item in data
+        li.history__item
+          if !item.university
+            h3.history__header= item.title
+              span.history__dates= item.date
+              span.history__second-title= !item.university ? item.job : item.university
+          else
+            h3(class="history__header history__header_degree")= item.title
+              span.history__dates= item.date
+              span.history__second-title= !item.university ? item.job : item.university
+          p.history__text= item.description

@@ -1,0 +1,135 @@
+include head/head
+include profile/profile
+include contacts/contacts
+include skills/skills
+include education/education
+include experience/experience
+include software/software
+
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="initial-scale=1.0, width=device-width")
+    meta(name="keywords" content="")
+    meta(name="description" content="")
+    title Resume
+  body
+    article.main
+      .first-column
+        +head()
+        +profile()
+        +contacts([
+        {
+          property: 'Address', 
+          value: 'Main Street, City.'
+        },
+        {
+          property: 'E-mail',
+          value: 'contact@domain.com'
+        },
+        {
+          property: 'Phone',
+          value: '555-555-555'
+        },
+        {
+          property: 'Website',
+          value: 'www.yourweb.com'
+        }
+        ])
+        +skills([
+        {
+          skill: 'Creative',
+          value: 9,
+          max: 12
+        },
+        {
+          skill: 'Teamwork',
+          value: 11,
+          max: 12
+        },
+        {
+          skill: 'Innovate',
+          value: 6,
+          max: 12
+        },
+        {
+          skill: 'Communication',
+          value: 11,
+          max: 12
+        }
+        ])
+      .second-column
+        +education([
+        {
+          title: "Master degree ", 
+          date: "// Feb 2011 - Jun 2014 ", 
+          university: "University name", 
+          description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."
+        },
+        {
+          title: "Master degree ", 
+          date: "// Feb 2011 - Jun 2014 ", 
+          university: "University name", 
+          description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."
+        },
+        {
+          title: "Master degree ", 
+          date: "// Feb 2011 - Jun 2014 ", 
+          university: "University name", 
+          description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."
+        },
+        {
+          title: "Master degree ", 
+          date: "// Feb 2011 - Jun 2014 ", 
+          university: "University name", 
+          description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."
+        }
+        ])
+        +experience([
+          {
+            title: "Company name ", 
+            date: "// Feb 2011 - Jun 2014 ", 
+            job: "Your job here", 
+            description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."
+          },
+          {
+            title: "Company name ", 
+            date: "// Feb 2011 - Jun 2014 ", 
+            job: "Your job here", 
+            description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."
+          },
+          {
+            title: "Company name ", 
+            date: "// Feb 2011 - Jun 2014 ", 
+            job: "Your job here", 
+            description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."
+          }
+        ])
+        +software([
+          {
+            name: 'Photoshop',
+            value: 90
+          },
+          {
+            name: 'Dreamweaver',
+            value: 82
+          },
+          {
+            name: 'Illustrator',
+            value: 70
+          },
+          {
+            name: 'After Effects',
+            value: 61
+          },
+          {
+            name: 'Indesign',
+            value: 56
+          },
+          {
+            name: 'HTML&CSS3',
+            value: 90
+          }
+        ])
+

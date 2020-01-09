@@ -1,0 +1,10 @@
+include ../block-title/block-title
+
+mixin contacts(data)
+  section.contacts
+    +block-title({name: 'Contact', icon:'contact'})
+    .contacts__list
+      each item in data
+        .contacts__row 
+          .contacts__property= item.property
+          .contacts__value= item.value

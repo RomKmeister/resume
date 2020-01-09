@@ -1,0 +1,15 @@
+include ../block-title/block-title
+
+mixin skills(data)
+  - var n = 0
+  section.skills
+    +block-title({name: 'Skills', icon: 'skills'})
+    ul.skills__list
+      each item in data
+        li.skills__item= item.skill
+          .skills__graph
+            -for(var n = 0; n < item.max; n++)
+              if n < item.value
+                 div(class='skills__circle skills__circle_blue')
+              else
+               .skills__circle

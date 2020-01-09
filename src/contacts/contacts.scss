@@ -1,0 +1,49 @@
+@import '../vars';
+
+.contacts {
+    width: 94%;
+    margin-top: 3rem;
+
+    &__list {
+        margin-top: 1.917rem;
+        
+        font-size: 1.333rem;
+        line-height: 1.2;
+    }
+
+    &__row {
+        display: flex;
+    }
+
+    &__property {
+        width: 31%;
+        margin-bottom: 1.917rem;
+
+        font-weight: bold;
+        color: $main-color;
+        text-transform: uppercase;
+    }
+}
+
+@media(max-width: 1440px) {
+    .contacts__list {  
+        font-size: 1rem;
+    }
+}
+
+
+@media(max-width: 1024px) {
+    .contacts {
+        width: 100%;
+
+        &__property {
+            width: 20%;
+        }
+    }
+}
+
+@media(max-width: 600px) {
+    .contacts__property {
+        width: 30%;
+    }
+}

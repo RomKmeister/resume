@@ -1,0 +1,33 @@
+section(class="education")
+  h2(class="title education__title") Education
+  ul(class="descriptions education__descriptions")
+    li(class="description")
+      h3(class="description__header description__header--degree") Master degree 
+        span(class="description__dates") // Feb 2011 - Jun 2014
+        span(class="description__specify") University name
+      p(class="description__text") Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+    li(class="description")
+      h3(class="description__header description__header--degree") Master degree 
+        span(class="description__dates") // Feb 2011 - Jun 2014
+        span(class="description__specify") University name
+      p(class="description__text") Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+    li(class="description")
+      h3(class="description__header description__header--degree") Master degree 
+        span(class="description__dates") // Feb 2011 - Jun 2014
+        span(class="description__specify") University name
+      p(class="description__text") Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+    li(class="description")
+      h3(class="description__header description__header--degree") Master degree 
+        span(class="description__dates") // Feb 2011 - Jun 2014
+        span(class="description__specify") University name
+      p(class="description__text") Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+
+      mixin plan(options)
+  -
+  .plan
+    li(class="description")
+          h3(class="description__header description__header--degree") = options.title
+            span(class="description__dates") = options.date
+            span(class="description__specify") = options.university
+          p(class="description__text") = options.description
+
