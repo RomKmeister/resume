@@ -9,6 +9,10 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].bundle.js'
   },
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: './dist',
+    },
   module: {
     rules: [
       {
@@ -17,7 +21,7 @@ module.exports = {
       },
       {
         test: /\.pug$/,
-        use: ['html-loader?attrs=false', 'pug-html-loader']
+        use: ['html-loader', 'pug-html-loader']
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf|svg)$/,
@@ -33,8 +37,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'style.css',
-      template: 'base.scss'
+      filename: 'style.css'
     }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
