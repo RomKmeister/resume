@@ -43,5 +43,8 @@ module.exports = {
       filename: 'index.html',
       template: 'src/index.pug'
     })
-  ]
+  ],
+  devServer: {
+    contentBase: path.join(__dirname, 'dist')
+  }
 };
