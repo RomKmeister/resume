@@ -3,7 +3,7 @@
 main {
   &__photo {
     border-radius: 50%;
-    box-shadow: 0 0 0 21px #ffffff, 0 0 0 23px $main-color;
+    box-shadow: 0 0 0 21px $white, 0 0 0 23px $main-color;
   }
 
   &__title {

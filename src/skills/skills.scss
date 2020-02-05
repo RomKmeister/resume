@@ -52,11 +52,11 @@
   &__circle {
     padding: 2.7%;
     border-radius: 50%;
-    background: #e7e7e7;
+    background: $second-color;
     margin: 0 1.3% 0 1.55%;
 
     &_blue {
-      background: #0270ba;
+      background: $main-color;
     }
   }
 }
