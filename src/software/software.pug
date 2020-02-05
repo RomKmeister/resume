@@ -2,8 +2,8 @@ include ../block-title/block-title
 
 mixin software(data)
   section.software
-    +block-title({name: 'Software', icon: 'software'})
+    +block-title({ name: 'Software', icon: 'software' })
     ul.software__list
       each item in data
         li.software__item= item.name
-          .software__scale-value(style="width:" + `${item.value}%`)
+          .software__scale-value(style=`width: ${item.value}%`)
