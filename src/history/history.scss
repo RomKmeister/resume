@@ -32,6 +32,21 @@
 
     text-transform: uppercase;
 
+    @media(max-width: 1440px) {
+      font-size: 1.25rem;
+      line-height: 1;
+    }
+
+    @media(max-width: 1280px) {
+      font-size: 1.125rem;
+      line-height: 1.33;
+    }
+
+    @media(max-width: 1024px) {
+      font-size: 1.33rem;
+      line-height: 1.58;
+    }
+
     &_degree {
       color: $main-color;
     }
@@ -51,42 +66,17 @@
     font-weight: normal;
 
     color: #000000;
+
+    @media(max-width: 1280px) {
+      margin-top: 0;
+    }
   }
 
   &__text {
     margin: 0;
     margin-top: 0.417rem;
-  }
-}
-
-@media(max-width: 1440px) {
-  .history__header {
-    font-size: 1.25rem;
-    line-height: 1;
-  }
-}
-
-@media(max-width: 1280px) {
-  .history {
-    &__second-title {
-      margin-top: 0;
-    }
-
-    &__header {
-      font-size: 1.125rem;
-      line-height: 1.33;
-    }
-  }
-}
-
-@media(max-width: 1024px) {
-  .history {
-    &__header {
-      font-size: 1.33rem;
-      line-height: 1.58;
-    }
-
-    &__text {
+    
+    @media(max-width: 1024px) {
       font-size: 0.8rem;
     }
   }

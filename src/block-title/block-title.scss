@@ -13,6 +13,11 @@
   text-transform: uppercase;
   background-size: 4.85rem;
 
+  @media(max-width: 1440px) {
+    font-size: 1.96rem;
+    line-height: 2.33;
+  }
+
   &::after {
     content: "";
     flex-grow: 1;
@@ -51,12 +56,5 @@
   &_software {
     background: url("../software/software-icon.svg") 0 0 no-repeat;
     background-size: 4.85rem;
-  }
-}
-
-@media(max-width: 1440px) {
-  .title {
-    font-size: 1.96rem;
-    line-height: 2.33;
   }
 }

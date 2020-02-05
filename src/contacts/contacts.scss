@@ -6,6 +6,10 @@
     
     font-size: 1.333rem;
     line-height: 1.2;
+
+    @media(max-width: 1440px) {
+      font-size: 1rem;
+    }
   }
 
   &__row {
@@ -19,23 +23,13 @@
     font-weight: bold;
     color: $main-color;
     text-transform: uppercase;
-  }
-}
+    
+    @media(max-width: 1024px) {
+      width: 20%;
+    }
 
-@media(max-width: 1440px) {
-  .contacts__list { 
-    font-size: 1rem;
-  }
-}
-
-@media(max-width: 1024px) {
-  .contacts__property {
-    width: 20%;
-  }
-}
-
-@media(max-width: 600px) {
-  .contacts__property {
-    width: 30%;
+    @media(max-width: 600px) {
+      width: 30%;
+    }
   }
 }

@@ -18,11 +18,35 @@
     line-height: 1.5;
     text-align: center;
     text-transform: uppercase;
+
+    @media(max-width: 1440px) {
+      font-size: 1.25rem;
+      line-height: 1.5;
+    }
+
+    @media(max-width: 1280px) {
+      font-size: 1.125rem;
+      line-height: 1.33;
+    }
+
+    @media(max-width: 1024px) {
+      font-size: 1.5rem;
+      line-height: 1.5;
+    }
   }
 
   &__graph {
     display: flex;
     margin: 0 9.5%;
+
+    @media(max-width: 1440px) {
+      margin: 0;
+    } 
+    
+    @media(max-width: 1024px) {
+      width: 70%;
+      margin: 1rem auto;
+    }
   }
 
   &__circle {
@@ -36,38 +60,3 @@
     }
   }
 }
-
-@media(max-width: 1440px) {
-  .skills {
-    &__item {
-      font-size: 1.25rem;
-      line-height: 1.5;
-    }
-
-    &__graph {
-      margin: 0;
-    }
-  }
-}
-
-@media(max-width: 1280px) {
-  .skills__item {
-    font-size: 1.125rem;
-    line-height: 1.33;
-  }
-}
-
-@media(max-width: 1024px) {
-  .skills {
-    &__item {
-      font-size: 1.5rem;
-      line-height: 1.5;
-    }
-    
-    &__graph {
-      width: 70%;
-      margin: 1rem auto;
-    }
-  }
-}
-
