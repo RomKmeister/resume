@@ -1,10 +1,10 @@
 include head/head
 include profile/profile
-include contacts/contacts
-include skills/skills
+include contacts-block/contacts-block
+include skills-block/skills-block
 include education/education
 include experience/experience
-include software/software
+include software-block/software-block
 
 doctype html
 html(lang="ru")
@@ -27,7 +27,7 @@ html(lang="ru")
         .first-column__profile
           +profile()
         .first-column__contacts
-          +contacts([
+          +contacts-block([
           {
             property: 'Address', 
             value: 'Main Street, City.'
@@ -46,7 +46,7 @@ html(lang="ru")
           }
           ])
         .first-column__skills
-          +skills([
+          +skills-block([
           {
             skill: 'Creative',
             value: 9,
@@ -117,7 +117,7 @@ html(lang="ru")
             }
           ])
         .second-column__software
-          +software([
+          +software-block([
             {
               name: 'Photoshop',
               value: 90

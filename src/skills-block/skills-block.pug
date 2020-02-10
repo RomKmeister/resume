@@ -1,0 +1,9 @@
+include ../block-title/block-title
+include ../skill/skill
+
+mixin skills-block(data)
+  section.skills-block
+    +block-title({ name: 'Skills', icon: 'skills' })
+    ul.skills-block__list
+      each item in data
+        +skill(item)
