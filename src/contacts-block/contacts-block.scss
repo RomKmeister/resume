@@ -1,0 +1,14 @@
+@import '../vars';
+
+.contacts-block {
+  &__list {
+    margin-top: 1.917rem;
+    
+    font-size: 1.333rem;
+    line-height: 1.2;
+
+    @media(max-width: 1440px) {
+      font-size: 1rem;
+    }
+  }
+}
