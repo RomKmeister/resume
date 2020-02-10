@@ -12,20 +12,11 @@
   align-items: center;
   text-transform: uppercase;
   background-size: 4.85rem;
+  word-break: break-all;
 
   @media(max-width: 1440px) {
     font-size: 1.96rem;
     line-height: 2.33;
-  }
-
-  &::after {
-    content: "";
-    flex-grow: 1;
-    flex-shrink: 0;
-    margin-left: 0.417rem;
-    height: 0.333rem;
-    transform: translateY(-100%);
-    background:$main-color;
   }
 
   &_profile {
@@ -39,7 +30,7 @@
   }
 
   &_skills {
-    background: url("../skills/skills-icon.svg") 0 0 no-repeat;
+    background: url("../skills-block/skills-icon.svg") 0 0 no-repeat;
     background-size: 4.85rem;
   }
 
@@ -56,5 +47,15 @@
   &_software {
     background: url("../software/software-icon.svg") 0 0 no-repeat;
     background-size: 4.85rem;
+  }
+
+  &::after {
+    content: "";
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-left: 0.417rem;
+    height: 0.333rem;
+    transform: translateY(-100%);
+    background:$main-color;
   }
 }
