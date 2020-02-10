@@ -17,6 +17,7 @@
 
     text-transform: uppercase;
     text-align: center;
+    word-break: break-all;
   }
 
   &__firstname {
@@ -29,7 +30,7 @@
 		@media(max-width: 1440px) {
 			font-size: 3rem;
 		}
-    }
+  }
   
   &__surname {
     display: block;
