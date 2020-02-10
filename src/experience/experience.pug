@@ -4,5 +4,6 @@ include ../history/history
 mixin experience(data)
   section.experience
     +block-title({ name: 'Experience', icon: 'experience' })
-    .experience__history-wrap
-      +history(data)
+    ul.experience__history
+      each item in data
+        +history(item)
