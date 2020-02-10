@@ -1,0 +1,16 @@
+@import '../vars';
+
+.software-block {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1.25rem 0 0 0.5rem;
+    padding: 0;
+
+    list-style: none;
+
+    @media(max-width: 600px) {
+      display: block;
+    }
+  }
+}

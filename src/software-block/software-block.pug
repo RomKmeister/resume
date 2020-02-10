@@ -1,0 +1,9 @@
+include ../block-title/block-title
+include ../software/software
+
+mixin software-block(data)
+  section.software-block
+    +block-title({ name: 'Software', icon: 'software' })
+    ul.software-block__list
+      each item in data
+        +software(item)
