@@ -1,5 +1,5 @@
 mixin history(item)
-  - const theme = item.theme ? "history__header" : "history__header history__header_degree"
+  - const theme = item.theme ? "history__header history__header_theme-blue" : "history__header"
   - const secondTitle = !item.university ? item.job : item.university
   li.history__item
     h3(class=theme)= item.title
