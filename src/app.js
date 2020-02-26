@@ -4,4 +4,5 @@ function importAll (r) {
 
 importAll(require.context('../src/fonts', true, /\.*$/));
 importAll(require.context('../src/favicon', true, /\.*$/));
+importAll(require.context('../src/', true, /\.svg$/));
 importAll(require.context('../src/', true, /\.scss$/))
