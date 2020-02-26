@@ -1,9 +1,7 @@
 @import '../vars';
 
 .contact {
-  &__row {
-    display: flex;
-  }
+  display: flex;
 
   &__property {
     width: 31%;

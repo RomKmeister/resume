@@ -1,0 +1,145 @@
+include ../head/head
+include ../profile/profile
+include ../contacts-block/contacts-block
+include ../skills-block/skills-block
+include ../education/education
+include ../experience/experience
+include ../software-block/software-block
+
+mixin main()
+  article.main
+    .main__first-column
+      +head({
+        photo: 'images/photo.svg',
+        firstName: 'Name here',
+        surname: 'Surname',
+        position: 'Graphic designer',
+        addName: 'Name here'
+      })
+      .main__profile
+        +profile()
+      .main__contacts
+        +contacts-block([
+        {
+          property: 'Address', 
+          value: 'Main Street, City.'
+        },
+        {
+          property: 'E-mail',
+          value: 'contact@domain.com'
+        },
+        {
+          property: 'Phone',
+          value: '555-555-555'
+        },
+        {
+          property: 'Website',
+          value: 'www.yourweb.com'
+        }
+        ])
+      .main__skills
+        +skills-block([
+        {
+          skill: 'Creative',
+          value: 9,
+          max: 12
+        },
+        {
+          skill: 'Teamwork',
+          value: 11,
+          max: 12
+        },
+        {
+          skill: 'Innovate',
+          value: 6,
+          max: 12
+        },
+        {
+          skill: 'Communication',
+          value: 11,
+          max: 12
+        }
+        ])
+    .main__second-column
+      +education([
+      {
+        theme: "blue",
+        title: "Master degree ", 
+        date: "// Feb 2011 - Jun 2014 ", 
+        university: "University name", 
+        description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."
+      },
+      {
+        theme: "blue",
+        title: "Master degree ", 
+        date: "// Feb 2011 - Jun 2014 ", 
+        university: "University name", 
+        description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."
+      },
+      {
+        theme: "blue",
+        title: "Master degree ", 
+        date: "// Feb 2011 - Jun 2014 ", 
+        university: "University name", 
+        description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."
+      },
+      {
+        theme: "blue",
+        title: "Master degree ", 
+        date: "// Feb 2011 - Jun 2014 ", 
+        university: "University name", 
+        description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."
+      }
+      ])
+      .main__experience
+        +experience([
+          {
+            theme: "",
+            title: "Company name ", 
+            date: "// Feb 2011 - Jun 2014 ", 
+            job: "Your job here", 
+            description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."
+          },
+          {
+            theme: "",
+            title: "Company name ", 
+            date: "// Feb 2011 - Jun 2014 ", 
+            job: "Your job here", 
+            description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."
+          },
+          {
+            theme: "",
+            title: "Company name ", 
+            date: "// Feb 2011 - Jun 2014 ", 
+            job: "Your job here", 
+            description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque."
+          }
+        ])
+      .main__software
+        +software-block([
+          {
+            name: 'Photoshop',
+            value: 90
+          },
+          {
+            name: 'Dreamweaver',
+            value: 82
+          },
+          {
+            name: 'Illustrator',
+            value: 70
+          },
+          {
+            name: 'After Effects',
+            value: 61
+          },
+          {
+            name: 'Indesign',
+            value: 56
+          },
+          {
+            name: 'HTML&CSS3',
+            value: 90
+          }
+        ])
+

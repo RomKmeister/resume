@@ -1,6 +1,6 @@
 @import '../vars';
 
-.title {
+.block-title {
   display: flex;
   min-height: 4.92rem;
   margin: 0;
@@ -12,43 +12,15 @@
   align-items: center;
   text-transform: uppercase;
   background-size: 4.85rem;
+  background-position: 0 0;
+  background-repeat: no-repeat;
   word-break: break-all;
 
   @media(max-width: 1440px) {
     font-size: 1.96rem;
     line-height: 2.33;
   }
-
-  &_profile {
-    background: url("../profile/profile-icon.svg") 0 0 no-repeat;
-    background-size: 4.85rem;
-  }
-
-  &_contact {
-    background: url("../contacts-block/phone-icon.svg") 0 0 no-repeat;
-    background-size: 4.85rem;
-  }
-
-  &_skills {
-    background: url("../skills-block/skills-icon.svg") 0 0 no-repeat;
-    background-size: 4.85rem;
-  }
-
-  &_experience {
-    background: url("../experience/experience-icon.svg") 0 0 no-repeat;
-    background-size: 4.85rem;
-  }
-
-  &_education {
-    background: url("../education/education-icon.svg") 0 0 no-repeat;
-    background-size: 4.85rem;
-  }
-
-  &_software {
-    background: url("../software-block/software-icon.svg") 0 0 no-repeat;
-    background-size: 4.85rem;
-  }
-
+  
   &::after {
     content: "";
     flex-grow: 1;

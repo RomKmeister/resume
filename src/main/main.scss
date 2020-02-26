@@ -1,0 +1,81 @@
+@import '../vars';
+
+.main {
+  display: flex;
+  justify-content: space-between;
+
+  @media(max-width: 1024px) {
+    display: block;
+  }
+
+  &__first-column {
+    margin-top: 5.5%;
+    margin-left: 4.5%;
+    width: 35.4%;
+  }
+
+  &__profile {
+    width: 94.6%;
+    margin-top: 1.13rem;
+
+    @media(max-width: 1024px) {
+      width: 100%;
+    }
+  }
+
+  &__contacts {
+    width: 94%;
+    margin-top: 3rem;
+
+    @media(max-width: 1024px) {
+      width: 100%;
+    }
+  }
+  
+  &__skills {
+    width: 94%;
+    margin-top: 1.083rem;
+
+    @media(max-width: 1024px) {
+      width: 100%;
+    }
+  }
+
+  @media(max-width: 1280px) {
+    width: 43%;
+    margin-left: 2.5%;
+  }
+
+  @media(max-width: 1024px) {
+    width: 90%;
+    margin: 0 5%;
+  }
+
+  &__second-column {
+    margin-top: 5.7%;
+    margin-right: 4.5%;
+    width: 51.5%;
+  }
+
+  &__experience {
+    margin-top: 3.54rem;
+  }
+
+  &__software {
+    margin-top: 3.55rem;
+  }
+
+  @media(max-width: 1440px) {
+    width: 50%;
+  }
+
+  @media(max-width: 1280px) {
+    width: 45%;
+    margin-right: 2.5%;
+  }
+
+  @media(max-width: 1024px) {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
