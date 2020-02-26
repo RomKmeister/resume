@@ -174,6 +174,17 @@
 
 /***/ }),
 
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/main/main.scss":
+/*!***************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/main/main.scss ***!
+  \***************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/profile/profile.scss":
 /*!*********************************************************************************************************************************************************************!*\
   !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/profile/profile.scss ***!
@@ -765,6 +776,7 @@ var map = {
 	"./experience/experience.scss": "./src/experience/experience.scss",
 	"./head/head.scss": "./src/head/head.scss",
 	"./history/history.scss": "./src/history/history.scss",
+	"./main/main.scss": "./src/main/main.scss",
 	"./profile/profile.scss": "./src/profile/profile.scss",
 	"./skill/skill.scss": "./src/skill/skill.scss",
 	"./skills-block/skills-block.scss": "./src/skills-block/skills-block.scss",
@@ -795,6 +807,52 @@ webpackContext.id = "./src sync recursive \\.scss$";
 
 /***/ }),
 
+/***/ "./src sync recursive \\.svg$":
+/*!*************************!*\
+  !*** ./src sync \.svg$ ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./block-title/default-icon.svg": "./src/block-title/default-icon.svg",
+	"./contacts-block/phone-icon.svg": "./src/contacts-block/phone-icon.svg",
+	"./education/education-icon.svg": "./src/education/education-icon.svg",
+	"./experience/experience-icon.svg": "./src/experience/experience-icon.svg",
+	"./favicon/favicon.svg": "./src/favicon/favicon.svg",
+	"./favicon/safari-pinned-tab.svg": "./src/favicon/safari-pinned-tab.svg",
+	"./fonts/MyriadPro-Bold.svg": "./src/fonts/MyriadPro-Bold.svg",
+	"./fonts/MyriadPro-LightSemiExtended.svg": "./src/fonts/MyriadPro-LightSemiExtended.svg",
+	"./fonts/MyriadPro-Regular.svg": "./src/fonts/MyriadPro-Regular.svg",
+	"./head/photo.svg": "./src/head/photo.svg",
+	"./profile/profile-icon.svg": "./src/profile/profile-icon.svg",
+	"./skills-block/skills-icon.svg": "./src/skills-block/skills-icon.svg",
+	"./software-block/software-icon.svg": "./src/software-block/software-icon.svg",
+	"./software/software-icon.svg": "./src/software/software-icon.svg"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./src sync recursive \\.svg$";
+
+/***/ }),
+
 /***/ "./src/app.js":
 /*!********************!*\
   !*** ./src/app.js ***!
@@ -808,6 +866,7 @@ function importAll (r) {
 
 importAll(__webpack_require__("./src/fonts sync recursive \\.*$"));
 importAll(__webpack_require__("./src/favicon sync recursive \\.*$"));
+importAll(__webpack_require__("./src sync recursive \\.svg$"));
 importAll(__webpack_require__("./src sync recursive \\.scss$"))
 
 /***/ }),
@@ -872,6 +931,17 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./src/block-title/default-icon.svg":
+/*!******************************************!*\
+  !*** ./src/block-title/default-icon.svg ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/default-icon.svg";
+
+/***/ }),
+
 /***/ "./src/contact/contact.scss":
 /*!**********************************!*\
   !*** ./src/contact/contact.scss ***!
@@ -932,6 +1002,28 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./src/contacts-block/phone-icon.svg":
+/*!*******************************************!*\
+  !*** ./src/contacts-block/phone-icon.svg ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/phone-icon.svg";
+
+/***/ }),
+
+/***/ "./src/education/education-icon.svg":
+/*!******************************************!*\
+  !*** ./src/education/education-icon.svg ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/education-icon.svg";
+
+/***/ }),
+
 /***/ "./src/education/education.scss":
 /*!**************************************!*\
   !*** ./src/education/education.scss ***!
@@ -959,6 +1051,17 @@ var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyl
 if(content.locals) module.exports = content.locals;
 
 if(false) {}
+
+/***/ }),
+
+/***/ "./src/experience/experience-icon.svg":
+/*!********************************************!*\
+  !*** ./src/experience/experience-icon.svg ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/experience-icon.svg";
 
 /***/ }),
 
@@ -1326,6 +1429,17 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./src/head/photo.svg":
+/*!****************************!*\
+  !*** ./src/head/photo.svg ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/photo.svg";
+
+/***/ }),
+
 /***/ "./src/history/history.scss":
 /*!**********************************!*\
   !*** ./src/history/history.scss ***!
@@ -1353,6 +1467,47 @@ var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyl
 if(content.locals) module.exports = content.locals;
 
 if(false) {}
+
+/***/ }),
+
+/***/ "./src/main/main.scss":
+/*!****************************!*\
+  !*** ./src/main/main.scss ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./main.scss */ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/main/main.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./src/profile/profile-icon.svg":
+/*!**************************************!*\
+  !*** ./src/profile/profile-icon.svg ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/profile-icon.svg";
 
 /***/ }),
 
@@ -1446,6 +1601,17 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./src/skills-block/skills-icon.svg":
+/*!******************************************!*\
+  !*** ./src/skills-block/skills-icon.svg ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/skills-icon.svg";
+
+/***/ }),
+
 /***/ "./src/software-block/software-block.scss":
 /*!************************************************!*\
   !*** ./src/software-block/software-block.scss ***!
@@ -1473,6 +1639,28 @@ var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyl
 if(content.locals) module.exports = content.locals;
 
 if(false) {}
+
+/***/ }),
+
+/***/ "./src/software-block/software-icon.svg":
+/*!**********************************************!*\
+  !*** ./src/software-block/software-icon.svg ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/software-icon.svg";
+
+/***/ }),
+
+/***/ "./src/software/software-icon.svg":
+/*!****************************************!*\
+  !*** ./src/software/software-icon.svg ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/software-icon.svg";
 
 /***/ }),
 
