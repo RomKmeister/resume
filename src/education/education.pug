@@ -3,7 +3,7 @@ include ../history/history
 
 mixin education(data)
   section.education
-    +block-title({ name: 'Education', icon:'education' })
+    +block-title({ name: 'Education', icon:'education-icon.svg' })
     ul.education__history
       each item in data
         +history(item)

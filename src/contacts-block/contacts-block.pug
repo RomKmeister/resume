@@ -3,7 +3,7 @@ include ../contact/contact
 
 mixin contacts-block(data)
   section.contacts-block
-    +block-title({ name: 'Contact', icon:'contact' })
+    +block-title({ name: 'Contact', icon:'phone-icon.svg' })
     .contacts-block__list
       each item in data
         +contact(item)
