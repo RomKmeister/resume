@@ -9,10 +9,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].bundle.js'
   },
-  devtool: 'inline-source-map',
-  devServer: {
-    contentBase: './dist',
-    },
+  devtool: 'source-map',
   module: {
     rules: [
       {
