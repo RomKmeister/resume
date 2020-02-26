@@ -26,8 +26,13 @@ module.exports = {
         use: ['file-loader?name=fonts/[name].[ext]']
       },
       {
+        test: /\.(png|svg|jpe?g|gif|ico|xml|webmanifest)$/,
+        include: /favicon/,
+        use: ['file-loader?name=favicon/[name].[ext]']
+      },
+      {
         test: /\.(png|svg|jpe?g|gif)$/,
-        exclude: /fonts/,
+        exclude: [/fonts/, /favicon/],
         use: ['file-loader?name=images/[name].[ext]']
       }
     ]
@@ -38,8 +43,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: 'src/index.pug',
-      favicon: 'src/favicon/favicon.ico'
+      template: 'src/index.pug'
     })
   ],
   devServer: {

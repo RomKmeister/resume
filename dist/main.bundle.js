@@ -807,6 +807,7 @@ function importAll (r) {
 }
 
 importAll(__webpack_require__("./src/fonts sync recursive \\.*$"));
+importAll(__webpack_require__("./src/favicon sync recursive \\.*$"));
 importAll(__webpack_require__("./src sync recursive \\.scss$"))
 
 /***/ }),
@@ -988,6 +989,170 @@ var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyl
 if(content.locals) module.exports = content.locals;
 
 if(false) {}
+
+/***/ }),
+
+/***/ "./src/favicon sync recursive \\.*$":
+/*!*******************************!*\
+  !*** ./src/favicon sync \.*$ ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./android-chrome-192x192.png": "./src/favicon/android-chrome-192x192.png",
+	"./android-chrome-512x512.png": "./src/favicon/android-chrome-512x512.png",
+	"./apple-touch-icon.png": "./src/favicon/apple-touch-icon.png",
+	"./browserconfig.xml": "./src/favicon/browserconfig.xml",
+	"./favicon-16x16.png": "./src/favicon/favicon-16x16.png",
+	"./favicon-32x32.png": "./src/favicon/favicon-32x32.png",
+	"./favicon.ico": "./src/favicon/favicon.ico",
+	"./favicon.svg": "./src/favicon/favicon.svg",
+	"./mstile-150x150.png": "./src/favicon/mstile-150x150.png",
+	"./safari-pinned-tab.svg": "./src/favicon/safari-pinned-tab.svg",
+	"./site.webmanifest": "./src/favicon/site.webmanifest"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./src/favicon sync recursive \\.*$";
+
+/***/ }),
+
+/***/ "./src/favicon/android-chrome-192x192.png":
+/*!************************************************!*\
+  !*** ./src/favicon/android-chrome-192x192.png ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "favicon/android-chrome-192x192.png";
+
+/***/ }),
+
+/***/ "./src/favicon/android-chrome-512x512.png":
+/*!************************************************!*\
+  !*** ./src/favicon/android-chrome-512x512.png ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "favicon/android-chrome-512x512.png";
+
+/***/ }),
+
+/***/ "./src/favicon/apple-touch-icon.png":
+/*!******************************************!*\
+  !*** ./src/favicon/apple-touch-icon.png ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "favicon/apple-touch-icon.png";
+
+/***/ }),
+
+/***/ "./src/favicon/browserconfig.xml":
+/*!***************************************!*\
+  !*** ./src/favicon/browserconfig.xml ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "favicon/browserconfig.xml";
+
+/***/ }),
+
+/***/ "./src/favicon/favicon-16x16.png":
+/*!***************************************!*\
+  !*** ./src/favicon/favicon-16x16.png ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "favicon/favicon-16x16.png";
+
+/***/ }),
+
+/***/ "./src/favicon/favicon-32x32.png":
+/*!***************************************!*\
+  !*** ./src/favicon/favicon-32x32.png ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "favicon/favicon-32x32.png";
+
+/***/ }),
+
+/***/ "./src/favicon/favicon.ico":
+/*!*********************************!*\
+  !*** ./src/favicon/favicon.ico ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "favicon/favicon.ico";
+
+/***/ }),
+
+/***/ "./src/favicon/favicon.svg":
+/*!*********************************!*\
+  !*** ./src/favicon/favicon.svg ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "favicon/favicon.svg";
+
+/***/ }),
+
+/***/ "./src/favicon/mstile-150x150.png":
+/*!****************************************!*\
+  !*** ./src/favicon/mstile-150x150.png ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "favicon/mstile-150x150.png";
+
+/***/ }),
+
+/***/ "./src/favicon/safari-pinned-tab.svg":
+/*!*******************************************!*\
+  !*** ./src/favicon/safari-pinned-tab.svg ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "favicon/safari-pinned-tab.svg";
+
+/***/ }),
+
+/***/ "./src/favicon/site.webmanifest":
+/*!**************************************!*\
+  !*** ./src/favicon/site.webmanifest ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "favicon/site.webmanifest";
 
 /***/ }),
 
