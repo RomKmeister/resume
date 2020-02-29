@@ -3,7 +3,7 @@ include ../history-item/history-item
 
 mixin experience(data)
   section.experience
-    +block-title({ name: 'Experience', icon: 'experience-icon.svg' })
+    +block-title({ name: 'Experience', icon: 'images/experience-icon.svg' })
     ul.experience__history
       each item in data
         +history-item(item)

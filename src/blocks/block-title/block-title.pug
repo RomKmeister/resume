@@ -1,3 +1,3 @@
 mixin block-title({ name, icon })
   - const defaultIcon = icon ? icon : 'default-icon.svg'
-  h2.block-title(style=`background-image: url(images/${defaultIcon})`)= name
+  h2.block-title(style=`background-image: url(${defaultIcon})`)= name
