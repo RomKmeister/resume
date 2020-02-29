@@ -12,6 +12,16 @@
     margin-top: 5.5%;
     margin-left: 4.5%;
     width: 35.4%;
+
+    @media(max-width: 1280px) {
+      width: 44%;
+      margin-left: 2.5%;
+    }
+  
+    @media(max-width: 1024px) {
+      width: 90%;
+      margin: 0 5%;
+    }
   }
 
   &__profile {
@@ -41,20 +51,24 @@
     }
   }
 
-  @media(max-width: 1280px) {
-    width: 43%;
-    margin-left: 2.5%;
-  }
-
-  @media(max-width: 1024px) {
-    width: 90%;
-    margin: 0 5%;
-  }
-
   &__right-column {
     margin-top: 5.7%;
     margin-right: 4.5%;
     width: 51.5%;
+
+    @media(max-width: 1440px) {
+      width: 50%;
+    }
+  
+    @media(max-width: 1280px) {
+      width: 44%;
+      margin-right: 2.5%;
+    }
+  
+    @media(max-width: 1024px) {
+      width: 90%;
+      margin: 0 5%;
+    }
   }
 
   &__experience {
@@ -63,19 +77,5 @@
 
   &__software {
     margin-top: 3.55rem;
-  }
-
-  @media(max-width: 1440px) {
-    width: 50%;
-  }
-
-  @media(max-width: 1280px) {
-    width: 45%;
-    margin-right: 2.5%;
-  }
-
-  @media(max-width: 1024px) {
-    width: 90%;
-    margin: 0 5%;
   }
 }
