@@ -1,9 +1,9 @@
 include ../block-title/block-title
-include ../history/history
+include ../history-item/history-item
 
 mixin experience(data)
   section.experience
     +block-title({ name: 'Experience', icon: 'experience-icon.svg' })
     ul.experience__history
       each item in data
-        +history(item)
+        +history-item(item)

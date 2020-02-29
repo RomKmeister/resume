@@ -8,7 +8,7 @@ include ../software-block/software-block
 
 mixin main()
   article.main
-    .main__first-column
+    .main__left-column
       +head({
         photo: 'images/photo.svg',
         firstName: 'Name here',
@@ -60,7 +60,7 @@ mixin main()
           max: 12
         }
         ])
-    .main__second-column
+    .main__right-column
       +education([
       {
         theme: "blue",

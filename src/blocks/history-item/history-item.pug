@@ -1,0 +1,8 @@
+mixin history-item(item)
+  - const theme = item.theme ? "history-item__header history-item__header_theme-blue" : "history-item__header"
+  - const secondTitle = !item.university ? item.job : item.university
+  li.history-item
+    h3(class=theme)= item.title
+      span.history-item__dates= item.date
+      span.history-item__second-title= secondTitle
+    p.history-item__text= item.description
