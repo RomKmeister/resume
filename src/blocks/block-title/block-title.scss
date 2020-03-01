@@ -15,11 +15,6 @@
   background-position: 0 0;
   background-repeat: no-repeat;
   word-break: break-all;
-
-  @media(max-width: 1440px) {
-    font-size: 1.96rem;
-    line-height: 2.33;
-  }
   
   &::after {
     content: "";
