@@ -1,13 +1,8 @@
 @import '../../vars';
 
 .software {
-  width: 44%;
   font-size: 1.708rem;
   text-transform: uppercase;
-
-  &:nth-of-type(2n+1) {
-    margin-right: 11%;
-  }
 
   &::after {
     content: "";
@@ -24,6 +19,7 @@
 
   &__scale-bar {
     position: relative;
+    width: 44%;
     margin-top: 0.67rem;
     background: $main-color;
     padding: 4% 0;

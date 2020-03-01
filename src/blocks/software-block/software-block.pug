@@ -6,4 +6,5 @@ mixin software-block(data)
     +block-title({ name: 'Software', iconPath: 'images/software-icon.svg' })
     ul.software-block__list
       each item in data
-        +software(item)
+        .software-block__wrap
+          +software(item)

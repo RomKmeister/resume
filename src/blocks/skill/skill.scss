@@ -3,7 +3,6 @@
 .skill {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1.22rem;
 
     font-size: 1.708rem;
     line-height: 1.5;
@@ -12,7 +11,7 @@
 
   &__graph {
     display: flex;
-    margin: 0 9.5%;
+    margin: 0 2.5rem 1.25rem;
 
     @media(max-width: 1440px) {
       margin: 0;
