@@ -3,7 +3,7 @@ include ../software/software
 
 mixin software-block(data)
   section.software-block
-    +block-title({ name: 'Software', icon: 'images/software-icon.svg' })
+    +block-title({ name: 'Software', iconPath: 'images/software-icon.svg' })
     ul.software-block__list
       each item in data
         +software(item)
