@@ -1,3 +1,4 @@
 mixin software(item)
-  li.software= item.name
-    .software__scale-bar(style=`width: ${item.value}%`)
+  - const { name, value } = item;
+  li.software= name
+    .software__scale-bar(style=`width: ${value}%`)

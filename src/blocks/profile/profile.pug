@@ -1,8 +1,8 @@
 include ../block-title/block-title
 
 mixin profile(data)
-  - const {text, importantText} = data
+  - const { text, importantText } = data;
   section.profile
-    +block-title({name: 'Profile', iconPath: 'images/profile-icon.svg'})
+    +block-title({ name: 'Profile', iconPath: 'images/profile-icon.svg' })
     p.profile__text= text
       span.profile__text.profile__text_bold= importantText

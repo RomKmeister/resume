@@ -1,6 +1,6 @@
 mixin history-item(item)
-  - const {theme, title, date, secondTitle, description} = item
-  - const classes = theme ? `history-item__header history-item__header_theme-${theme}` : "history-item__header"
+  - const { theme, title, date, secondTitle, description } = item;
+  - const classes = theme ? `history-item__header history-item__header_theme-${theme}` : "history-item__header";
   li.history-item
     h3(class=classes)= title
       span.history-item__dates= date

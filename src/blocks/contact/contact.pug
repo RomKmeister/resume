@@ -1,4 +1,5 @@
 mixin contact(item)
+  - const { header, info } = item;
   .contact
-    .contact__header= item.header
-    .contact__info= item.info
+    .contact__header= header
+    .contact__info= info

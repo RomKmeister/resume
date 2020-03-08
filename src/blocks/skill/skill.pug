@@ -1,8 +1,9 @@
 mixin skill(item)
-  li.skill= item.skill
+  - const { skill, value, max } = item;
+  li.skill= skill
     .skill__graph
-      -for(let n = 0; n < item.max; n++)
-        if n < item.value
+      -for(let n = 0; n < max; n++)
+        if n < value
           .skill__circle.skill__circle_blue
         else
           .skill__circle
