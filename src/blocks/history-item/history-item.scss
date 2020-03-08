@@ -26,6 +26,10 @@
     &_theme-blue {
       color: $main-color;
     }
+
+    &_theme-black {
+      color: $text;
+    }
   }
 
   &__dates {
