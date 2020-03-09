@@ -6,7 +6,7 @@ mixin history-item(item)
       black: 'black'
       };
   - const defaultTheme = themes.black;
-  - const classes = `history-item__header history-item__header_theme-${themes.theme || defaultTheme}`;
+  - const classes = `history-item__header history-item__header_theme-${themes[theme] || defaultTheme}`;
   li.history-item
     h3(class=classes)= title
       span.history-item__dates= date
