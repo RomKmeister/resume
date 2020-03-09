@@ -1,12 +1,18 @@
 @import '../../vars';
 
 .software-block {
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
   &__list {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    margin: 1.25rem 0 0 0.5rem;
+    width: 98%;
+    margin: 1.25rem 0 0;
     padding: 0;
-
     list-style: none;
 
     @media(max-width: 600px) {
@@ -16,10 +22,6 @@
 
   &__item {
     width: 44%;
-
-    &:nth-of-type(2n+1) {
-      margin-right: 11%;
-    }
   
     @media(max-width: 600px) {
       width: 90%;

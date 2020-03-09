@@ -7,14 +7,9 @@
   &::after {
     content: "";
     display: block;
-    width: 100%;
-    padding: 4% 0;
+    padding: 0.7rem 0;
     background: $second-color;
     transform: translateY(-100%);
-    
-    @media(max-width: 600px) {
-      margin-right: 0;
-    }
   }
 
   &__scale-bar {
@@ -22,7 +17,7 @@
     width: 44%;
     margin-top: 0.67rem;
     background: $main-color;
-    padding: 4% 0;
+    padding: 0.7rem 0;
     z-index: 10;
   }
 }
