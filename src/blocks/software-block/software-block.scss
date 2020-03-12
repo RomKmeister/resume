@@ -1,18 +1,12 @@
 @import '../../vars';
 
 .software-block {
-  &__wrapper {
-    display: flex;
-    justify-content: center;
-  }
-
   &__list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 98%;
     margin: 1.25rem 0 0;
-    padding: 0;
+    padding: 0 1%;
     list-style: none;
 
     @media(max-width: 600px) {

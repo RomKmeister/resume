@@ -1,17 +1,14 @@
 @import '../../vars';
 
 .skill {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     font-size: 1.708rem;
     line-height: 1.5;
+    text-align: center;
     text-transform: uppercase;
 
   &__graph {
     display: flex;
     justify-content: space-between;
-    width: 78%;
     margin-bottom: 1.25rem;
   }
 

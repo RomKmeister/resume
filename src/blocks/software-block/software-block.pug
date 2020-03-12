@@ -4,8 +4,7 @@ include ../software/software
 mixin software-block(data)
   section.software-block
     +block-title({ name: 'Software', iconPath: 'images/software-icon.svg' })
-    .software-block__wrapper
-      ul.software-block__list
-        each item in data
-          .software-block__item
-            +software(item)
+    ul.software-block__list
+      each item in data
+        .software-block__item
+          +software(item)
