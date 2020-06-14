@@ -3,12 +3,12 @@
 .profile {
   &__text {
     margin: 0.54rem 0 0;
-    
+
     &_bold {
       font-weight: bold;
     }
   }
-  
+
   @media(max-width: 1024px) {
     font-size: 0.8rem;
   }
