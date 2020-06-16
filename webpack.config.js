@@ -9,12 +9,11 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].bundle.js'
   },
-  devtool: 'source-map',
   module: {
     rules: [
       {
         test: /\.scss$/,
-        use:  ['style-loader', MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+        use:  [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
       },
       {
         test: /\.pug$/,
@@ -46,7 +45,4 @@ module.exports = {
       template: 'src/index.pug'
     })
   ],
-  devServer: {
-    contentBase: path.join(__dirname, 'dist')
-  }
 };
