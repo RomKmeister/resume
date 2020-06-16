@@ -1,4 +1,6 @@
 mixin block-title(data)
   - const { name, iconPath } = data;
   - const iconUrl = iconPath ? iconPath : 'images/default-icon.svg';
-  h2.block-title(style=`background-image: url(${iconUrl})`)= name
+  h2.block-title
+    span.block-title__logo(style=`background-image: url(${iconUrl})`)
+    span.block-title__title= name

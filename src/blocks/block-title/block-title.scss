@@ -4,25 +4,35 @@
   display: flex;
   min-height: 4.92rem;
   margin: 0;
-  padding-left: 5.4rem;
 
-  font-size: 2.7rem;
-  line-height: 1;
-  color: $main-color;
-  align-items: center;
-  text-transform: uppercase;
-  background-size: 4.85rem;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  word-break: break-all;
+  &__logo {
+    margin: 0;
+    padding: 2.45rem;
+    color: $main-color;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 
-  &::after {
-    content: "";
+  &__title {
+    display: flex;
     flex-grow: 1;
-    flex-shrink: 0;
-    margin-left: 0.417rem;
-    height: 0.333rem;
-    transform: translateY(-100%);
-    background:$main-color;
+    margin: 0;
+    margin-left: 1rem;
+    font-size: 2.7rem;
+    line-height: 1;
+    color: $main-color;
+    align-items: center;
+    text-transform: uppercase;
+    word-break: break-all;
+
+    &::after {
+      content: "";
+      flex-grow: 1;
+      flex-shrink: 0;
+      margin-left: 0.417rem;
+      height: 0.333rem;
+      transform: translateY(-100%);
+      background:$main-color;
+    }
   }
 }
