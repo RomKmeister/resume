@@ -1,6 +1,7 @@
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -17,7 +18,7 @@ module.exports = {
       },
       {
         test: /\.pug$/,
-        use: ['html-loader', 'pug-html-loader']
+        loaders: ['pug-loader'],
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf|svg)$/,
@@ -29,11 +30,6 @@ module.exports = {
         include: /favicon/,
         use: ['file-loader?name=favicon/[name].[ext]']
       },
-      {
-        test: /\.(png|svg|jpe?g|gif)$/,
-        exclude: [/fonts/, /favicon/],
-        use: ['file-loader?name=images/[name].[ext]']
-      }
     ]
   },
   plugins: [
@@ -43,6 +39,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'src/index.pug'
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: './src/blocks/**/*.+(png|svg|jpeg|gif)', to: './images', flatten: true }
+      ]
     })
   ],
 };

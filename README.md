@@ -1,5 +1,5 @@
 # resume
-<a href="https://romkmeister.github.io/resume/dist/index.html">Страница</a>
+<a href="https://romkmeister.github.io/resume/index.html">Страница</a>
 <h2>Клонирование репозитория</h2>
  <pre>$ git clone https://github.com/RomKmeister/resume.git</pre>
 <h2>Сборка проекта</h2>
