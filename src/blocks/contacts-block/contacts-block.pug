@@ -5,5 +5,4 @@ mixin contacts-block(data)
   section.contacts-block
     +block-title({ name: 'Contact', iconPath: 'images/phone-icon.svg' })
     .contacts-block__list
-      each item in data
-        +contact(item)
+      +contact(data)

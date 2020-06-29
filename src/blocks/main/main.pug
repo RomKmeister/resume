@@ -22,24 +22,12 @@ mixin main()
           importantText: 'pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.'
         })
       .main__contacts
-        +contacts-block([
-        {
-          header: 'Address',
-          info: 'Main Street, City.'
-        },
-        {
-          header: 'E-mail',
-          info: 'contact@domain.com'
-        },
-        {
-          header: 'Phone',
-          info: '555-555-555'
-        },
-        {
-          header: 'Website',
-          info: 'www.yourweb.com'
-        }
-        ])
+        +contacts-block({
+          address: 'Main Street, City.',
+          email: 'contact@domain.com',
+          phone: '555-555-555',
+          website: 'www.yourweb.com'
+        })
       .main__skills
         +skills-block([
         {

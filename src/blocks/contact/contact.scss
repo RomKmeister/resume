@@ -1,7 +1,10 @@
 @import '../../vars';
 
 .contact {
+
+  &__row {
   display: flex;
+  }
 
   &__header {
     width: 31%;
@@ -17,6 +20,24 @@
 
     @media(max-width: 600px) {
       width: 30%;
+    }
+  }
+
+  &__link {
+    color: $text;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $hovered;
+    }
+
+    &:active {
+      color: $active;
+    }
+
+    &:visited {
+      color: $visited;
     }
   }
 }

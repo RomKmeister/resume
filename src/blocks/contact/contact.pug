@@ -1,5 +1,15 @@
-mixin contact(item)
-  - const { header, info } = item;
+mixin contact(data)
+  - const { address, email, phone, website } = data;
   .contact
-    .contact__header= header
-    .contact__info= info
+    .contact__row
+      .contact__header Address
+      .contact__info= address
+    .contact__row
+      .contact__header E-mail
+      a.contact__link(href=`mailto: ${email}`)= email
+    .contact__row
+      .contact__header Phone
+      a.contact__link(href=`tel: ${phone}`)= phone
+    .contact__row
+      .contact__header Website
+      a.contact__link(href=`${website}`, target="_blank", rel="noopener noreferrer")= website
