@@ -67,20 +67,31 @@ html {
       transform: translateY(-100%);
       background: #0270ba; }
 
-.contact {
+.contact__row {
   display: flex; }
-  .contact__header {
-    width: 31%;
-    margin-bottom: 1.917rem;
-    font-weight: bold;
-    color: #0270ba;
-    text-transform: uppercase; }
-    @media (max-width: 1024px) {
-      .contact__header {
-        width: 25%; } }
-    @media (max-width: 600px) {
-      .contact__header {
-        width: 30%; } }
+
+.contact__header {
+  width: 31%;
+  margin-bottom: 1.917rem;
+  font-weight: bold;
+  color: #0270ba;
+  text-transform: uppercase; }
+  @media (max-width: 1024px) {
+    .contact__header {
+      width: 25%; } }
+  @media (max-width: 600px) {
+    .contact__header {
+      width: 30%; } }
+
+.contact__link {
+  color: #000000;
+  text-decoration: none; }
+  .contact__link:hover, .contact__link:focus {
+    color: #777777; }
+  .contact__link:active {
+    color: #0066aa; }
+  .contact__link:visited {
+    color: #154b6e; }
 
 .contacts-block__list {
   margin-top: 1.7rem;
